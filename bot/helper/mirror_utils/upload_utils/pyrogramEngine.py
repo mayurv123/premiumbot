@@ -137,6 +137,7 @@ class TgUploader:
                 self.__sent_msg = self.__sent_msg.reply_document(document=up_path,
                                                                  quote=True,
                                                                  caption=cap_mono,
+                                                                 thumb=thumb,
                                                                  disable_notification=True,
                                                                  progress=self.__upload_progress)
         except FloodWait as f:
